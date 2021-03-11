@@ -16,7 +16,7 @@ const getSpectators = () => {
 
     spectators = [];
 
-    for (let i = 0; i < ents.length; i++) {
+    for (let i = 0; i < players.length; i++) {
         let player = players[i];
 
         if (!player || Entity.IsAlive(player)) continue;
