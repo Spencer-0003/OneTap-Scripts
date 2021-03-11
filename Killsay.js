@@ -1,5 +1,10 @@
 // Kinda wish I had a skeet invite :cry:
 
+/**
+ * Insults
+ * @type {object}
+ */
+
 const messages = {
     normal: [
         "{victim}, I'd say your aim is cancer but that can actually kill things LOL",
@@ -29,9 +34,19 @@ const messages = {
     ]
 };
 
+/**
+ * 
+ * @param {*} array 
+ * @returns string
+ */
+
 const getRandomMessage = array => {
     return array[Math.floor(Math.random() * array.length)];
 };
+
+/**
+ * Insult players in game
+ */
 
 const on_player_death = () => {
     let victim = Entity.GetEntityFromUserID(Event.GetInt("userid"));
@@ -43,6 +58,8 @@ const on_player_death = () => {
     let message = getRandomMessage(headshot ? messages.headshot : messages.normal).replace("{victim}", Entity.GetName(victim));
     Cheat.ExecuteCommand("say " + message);
 };
+
+/* Add UI elements */
 
 UI.AddCheckbox("Kill Say");
 Cheat.RegisterCallback("player_death", "on_player_death");
