@@ -3,5 +3,5 @@ These are some scripts for the OneTap CSGO cheat that I wrote because I was bore
 
 ## Scripts
 
-Kill say - Say a message when you kill someone (taunt them).
-Spectator list - Shows a list of your spectators.
+- Kill say - Say a message when you kill someone (taunt them).
+- Spectator list - Shows a list of your spectators.
