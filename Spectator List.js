@@ -58,6 +58,6 @@ const onRoundStart = () => {
  * Register callbacks in OneTap
  */
 
-Cheat.RegisterCallback("Draw","getSpectators");
-Cheat.RegisterCallback("Draw","drawSpectators");
-Cheat.RegisterCallback("round_start","onRoundStart");
+Cheat.RegisterCallback("Draw", "getSpectators");
+Cheat.RegisterCallback("Draw", "drawSpectators");
+Cheat.RegisterCallback("round_start", "onRoundStart");
